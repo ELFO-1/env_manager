@@ -19,6 +19,7 @@ load_env_directory() {
 load_env_directory
 
 # Zeige aktuelles Verzeichnis und frage nach Änderung
+echo ""
 echo "Aktuelles Environment-Verzeichnis: $ENV_DIR"
 read -p "Möchten Sie das Environment-Verzeichnis ändern? (j/n): " change_dir
 
@@ -63,9 +64,13 @@ list_environments() {
     echo "----------------------"
 }
 
+echo ""
+echo "========================="
 echo "Python Environment Manager"
+echo ""
 echo "by ELFO"
 echo "========================="
+echo ""
 echo "1: Neues Environment erstellen"
 echo "2: Bestehendes Environment aktivieren"
 echo "3: Verfügbare Environments anzeigen"
